@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Gallery Test</title>
+
+        <style>
+            .responsive-thumbnail {
+                padding: 3px 6px;
+                float: left;
+                width: 24.9999%;
+            }
+
+            .responsive-photo {
+                float: left;
+                width: 60%;
+            }
+
+            .responsive-description {
+                width: 20%;
+                margin-left: 70%;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .responsive-thumbnail {
+                    width: 49.9999%;
+                    margin: 6px 0;
+                }
+            }
+
+            @media only screen and (max-width: 900px) {
+                .responsive-photo {
+                    width: 100%
+                }
+
+                .responsive-description {
+                    width: 50%;
+                    margin-left: 0;
+                }
+            }
+
+            @media only screen and (max-width: 700px) {
+                .responsive-thumbnail {
+                    width: 100%;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Real Neat Gallery</h1>
+        <p>Check out my really cool pix and sign my guestbook plz!</p>
+        <div id="gallery"></div>
+        <p>Some content after...</p>
+
+        <script src="/bundle.js"></script>
+        <script>
+            ReactGallery.renderGallery([
+                {
+                    name: "Image One",
+                    description: "Curabitur sapien lacus, dignissim iaculis rutrum eu, lobortis sed massa. Mauris sed turpis quis nibh fringilla rhoncus. Suspendisse ultrices lacinia.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+One",
+                    fullsize: "http://placehold.it/1000x500?text=Image+One"
+                },
+                {
+                    name: "Image Two",
+                    description: "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla fringilla purus neque, at egestas lacus.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Two",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Two",
+                },
+                {
+                    name: "Image Three",
+                    description: "Nullam dapibus, quam id accumsan rhoncus, diam elit laoreet dui, id posuere diam lacus vel mi. Vivamus rhoncus tristique odio.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Three",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Three"
+                },
+                {
+                    name: "Image Four",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Four",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Four"
+                },
+                {
+                    name: "Image Five",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Five",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Five"
+                },
+                {
+                    name: "Image Size",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Six",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Six"
+                },
+                {
+                    name: "Image One",
+                    description: "Curabitur sapien lacus, dignissim iaculis rutrum eu, lobortis sed massa. Mauris sed turpis quis nibh fringilla rhoncus. Suspendisse ultrices lacinia.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+One",
+                    fullsize: "http://placehold.it/1000x500?text=Image+One"
+                },
+                {
+                    name: "Image Two",
+                    description: "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla fringilla purus neque, at egestas lacus.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Two",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Two",
+                },
+                {
+                    name: "Image Three",
+                    description: "Nullam dapibus, quam id accumsan rhoncus, diam elit laoreet dui, id posuere diam lacus vel mi. Vivamus rhoncus tristique odio.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Three",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Three"
+                },
+                {
+                    name: "Image Four",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Four",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Four"
+                },
+                {
+                    name: "Image Five",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Five",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Five"
+                },
+                {
+                    name: "Image Size",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Six",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Six"
+                },
+                {
+                    name: "Image One",
+                    description: "Curabitur sapien lacus, dignissim iaculis rutrum eu, lobortis sed massa. Mauris sed turpis quis nibh fringilla rhoncus. Suspendisse ultrices lacinia.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+One",
+                    fullsize: "http://placehold.it/1000x500?text=Image+One"
+                },
+                {
+                    name: "Image Two",
+                    description: "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla fringilla purus neque, at egestas lacus.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Two",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Two",
+                },
+                {
+                    name: "Image Three",
+                    description: "Nullam dapibus, quam id accumsan rhoncus, diam elit laoreet dui, id posuere diam lacus vel mi. Vivamus rhoncus tristique odio.",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Three",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Three"
+                },
+                {
+                    name: "Image Four",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Four",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Four"
+                },
+                {
+                    name: "Image Five",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Five",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Five"
+                },
+                {
+                    name: "Image Size",
+                    description: "",
+                    thumbnail: "http://placehold.it/350x150?text=Image+Six",
+                    fullsize: "http://placehold.it/1000x500?text=Image+Six"
+                }
+            ], false, document.getElementById('gallery'));
+        </script>
+    </body>
+</html>
