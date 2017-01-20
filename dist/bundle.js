@@ -9599,7 +9599,7 @@ var Gallery = function (_React$Component) {
                             "< Prev"
                         ) : _react2.default.createElement(
                             "a",
-                            null,
+                            { disabled: true },
                             "< Prev"
                         ),
                         "\xA0",
@@ -9609,7 +9609,7 @@ var Gallery = function (_React$Component) {
                             "Next >"
                         ) : _react2.default.createElement(
                             "a",
-                            null,
+                            { disabled: true },
                             "Next >"
                         )
                     ),

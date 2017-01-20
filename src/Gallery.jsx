@@ -81,9 +81,9 @@ export default class Gallery extends React.Component {
                         <a style={{float: "right"}} href="javascript:" onClick={this.closeImage.bind(this)}>Back to gallery</a>
                         <h3>{photo.name}</h3>
                         <p>{photo.description}</p>
-                        {prevImage != null ? <a href="javascript:" onClick={this.viewImage.bind(this, prevImage)}>&lt; Prev</a> : <a>&lt; Prev</a>}
+                        {prevImage != null ? <a href="javascript:" onClick={this.viewImage.bind(this, prevImage)}>&lt; Prev</a> : <a disabled>&lt; Prev</a>}
                         &nbsp;
-                        {nextImage != null ? <a href="javascript:" onClick={this.viewImage.bind(this, nextImage)}>Next &gt;</a> : <a>Next &gt;</a>}
+                        {nextImage != null ? <a href="javascript:" onClick={this.viewImage.bind(this, nextImage)}>Next &gt;</a> : <a disabled>Next &gt;</a>}
                     </div>
                     <div style={{display: "table", clear: "both"}}></div>
                 </div>
