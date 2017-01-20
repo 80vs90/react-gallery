@@ -9569,47 +9569,47 @@ var Gallery = function (_React$Component) {
 
                 return _react2.default.createElement(
                     "div",
-                    { style: style },
+                    { className: "react-gallery-photo", style: style },
                     _react2.default.createElement(
                         "div",
-                        { className: "responsive-photo" },
+                        { className: "react-gallery-photo-img responsive-photo" },
                         _react2.default.createElement("img", { style: { width: "100%" }, src: photo.fullsize })
                     ),
                     _react2.default.createElement(
                         "div",
-                        { className: "responsive-description" },
+                        { className: "react-gallery-photo-description responsive-description" },
                         _react2.default.createElement(
                             "a",
-                            { style: { float: "right" }, href: "javascript:", onClick: this.closeImage.bind(this) },
+                            { className: "back", style: { float: "right" }, href: "javascript:", onClick: this.closeImage.bind(this) },
                             "Back to gallery"
                         ),
                         _react2.default.createElement(
                             "h3",
-                            null,
+                            { className: "title" },
                             photo.name
                         ),
                         _react2.default.createElement(
                             "p",
-                            null,
+                            { className: "description" },
                             photo.description
                         ),
                         prevImage != null ? _react2.default.createElement(
                             "a",
-                            { href: "javascript:", onClick: this.viewImage.bind(this, prevImage) },
+                            { className: "prev", href: "javascript:", onClick: this.viewImage.bind(this, prevImage) },
                             "< Prev"
                         ) : _react2.default.createElement(
                             "a",
-                            { disabled: true },
+                            { className: "prev", disabled: true },
                             "< Prev"
                         ),
                         "\xA0",
                         nextImage != null ? _react2.default.createElement(
                             "a",
-                            { href: "javascript:", onClick: this.viewImage.bind(this, nextImage) },
+                            { className: "next", href: "javascript:", onClick: this.viewImage.bind(this, nextImage) },
                             "Next >"
                         ) : _react2.default.createElement(
                             "a",
-                            { disabled: true },
+                            { className: "next", disabled: true },
                             "Next >"
                         )
                     ),

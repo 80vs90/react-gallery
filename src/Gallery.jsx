@@ -73,17 +73,17 @@ export default class Gallery extends React.Component {
             }
 
             return (
-                <div style={style}>
-                    <div className="responsive-photo">
+                <div className="react-gallery-photo" style={style}>
+                    <div className="react-gallery-photo-img responsive-photo">
                         <img style={{width: "100%"}} src={photo.fullsize} />
                     </div>
-                    <div className="responsive-description">
-                        <a style={{float: "right"}} href="javascript:" onClick={this.closeImage.bind(this)}>Back to gallery</a>
-                        <h3>{photo.name}</h3>
-                        <p>{photo.description}</p>
-                        {prevImage != null ? <a href="javascript:" onClick={this.viewImage.bind(this, prevImage)}>&lt; Prev</a> : <a disabled>&lt; Prev</a>}
+                    <div className="react-gallery-photo-description responsive-description">
+                        <a className="back" style={{float: "right"}} href="javascript:" onClick={this.closeImage.bind(this)}>Back to gallery</a>
+                        <h3 className="title">{photo.name}</h3>
+                        <p className="description">{photo.description}</p>
+                        {prevImage != null ? <a className="prev" href="javascript:" onClick={this.viewImage.bind(this, prevImage)}>&lt; Prev</a> : <a className="prev" disabled>&lt; Prev</a>}
                         &nbsp;
-                        {nextImage != null ? <a href="javascript:" onClick={this.viewImage.bind(this, nextImage)}>Next &gt;</a> : <a disabled>Next &gt;</a>}
+                        {nextImage != null ? <a className="next" href="javascript:" onClick={this.viewImage.bind(this, nextImage)}>Next &gt;</a> : <a className="next" disabled>Next &gt;</a>}
                     </div>
                     <div style={{display: "table", clear: "both"}}></div>
                 </div>
