@@ -76,7 +76,7 @@ export default class Gallery extends React.Component {
                 <div className="react-gallery-photo" style={style}>
                     <a className="back" href="javascript:" onClick={this.closeImage.bind(this)}>&lt; Back to gallery</a>
                     <div className="react-gallery-photo-img responsive-photo">
-                        <a href="javascript:" onClick={this.viewImage.bind(this, nextImage)}>
+                        <a href="javascript:" onClick={nextImage != null ? this.viewImage.bind(this, nextImage) : null}>
                             <img style={{width: "100%"}} src={photo.fullsize} />
                         </a>
                     </div>

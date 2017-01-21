@@ -9591,7 +9591,7 @@ var Gallery = function (_React$Component) {
                         { className: "react-gallery-photo-img responsive-photo" },
                         _react2.default.createElement(
                             "a",
-                            { href: "javascript:", onClick: this.viewImage.bind(this, nextImage) },
+                            { href: "javascript:", onClick: nextImage != null ? this.viewImage.bind(this, nextImage) : null },
                             _react2.default.createElement("img", { style: { width: "100%" }, src: photo.fullsize })
                         )
                     ),
