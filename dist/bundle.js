@@ -9592,6 +9592,29 @@ var Gallery = function (_React$Component) {
                         _react2.default.createElement(
                             "a",
                             { href: "javascript:", onClick: nextImage != null ? this.viewImage.bind(this, nextImage) : null },
+                            _react2.default.createElement(
+                                "div",
+                                { style: { float: "right" } },
+                                prevImage != null ? _react2.default.createElement(
+                                    "a",
+                                    { className: "prev", href: "javascript:", onClick: this.viewImage.bind(this, prevImage) },
+                                    "< Prev"
+                                ) : _react2.default.createElement(
+                                    "a",
+                                    { className: "prev", disabled: true },
+                                    "< Prev"
+                                ),
+                                "\xA0",
+                                nextImage != null ? _react2.default.createElement(
+                                    "a",
+                                    { className: "next", href: "javascript:", onClick: this.viewImage.bind(this, nextImage) },
+                                    "Next >"
+                                ) : _react2.default.createElement(
+                                    "a",
+                                    { className: "next", disabled: true },
+                                    "Next >"
+                                )
+                            ),
                             _react2.default.createElement("img", { style: { width: "100%" }, src: photo.fullsize })
                         )
                     ),
@@ -9625,25 +9648,6 @@ var Gallery = function (_React$Component) {
                                 { href: photo.permalink },
                                 "Permalink"
                             )
-                        ),
-                        prevImage != null ? _react2.default.createElement(
-                            "a",
-                            { className: "prev", href: "javascript:", onClick: this.viewImage.bind(this, prevImage) },
-                            "< Prev"
-                        ) : _react2.default.createElement(
-                            "a",
-                            { className: "prev", disabled: true },
-                            "< Prev"
-                        ),
-                        "\xA0",
-                        nextImage != null ? _react2.default.createElement(
-                            "a",
-                            { className: "next", href: "javascript:", onClick: this.viewImage.bind(this, nextImage) },
-                            "Next >"
-                        ) : _react2.default.createElement(
-                            "a",
-                            { className: "next", disabled: true },
-                            "Next >"
                         )
                     ),
                     _react2.default.createElement("div", { style: { display: "table", clear: "both" } })
