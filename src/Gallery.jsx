@@ -83,8 +83,8 @@ export default class Gallery extends React.Component {
                     <div className="react-gallery-photo-description responsive-description">
                         <h3 className="title">{photo.name}</h3>
                         <p className="description">{photo.description}</p>
-                        <p><a href="{photo.download}">Download</a></p>
-                        <p><a href="{photo.permalink}">Permalink</a></p>
+                        <p><a href={photo.download}>Download</a></p>
+                        <p><a href={photo.permalink}>Permalink</a></p>
                         {prevImage != null ? <a className="prev" href="javascript:" onClick={this.viewImage.bind(this, prevImage)}>&lt; Prev</a> : <a className="prev" disabled>&lt; Prev</a>}
                         &nbsp;
                         {nextImage != null ? <a className="next" href="javascript:" onClick={this.viewImage.bind(this, nextImage)}>Next &gt;</a> : <a className="next" disabled>Next &gt;</a>}

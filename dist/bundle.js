@@ -9613,7 +9613,7 @@ var Gallery = function (_React$Component) {
                             null,
                             _react2.default.createElement(
                                 "a",
-                                { href: "{photo.download}" },
+                                { href: photo.download },
                                 "Download"
                             )
                         ),
@@ -9622,7 +9622,7 @@ var Gallery = function (_React$Component) {
                             null,
                             _react2.default.createElement(
                                 "a",
-                                { href: "{photo.permalink}" },
+                                { href: photo.permalink },
                                 "Permalink"
                             )
                         ),
