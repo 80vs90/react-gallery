@@ -9608,6 +9608,24 @@ var Gallery = function (_React$Component) {
                             { className: "description" },
                             photo.description
                         ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            _react2.default.createElement(
+                                "a",
+                                { href: "{photo.download}" },
+                                "Download"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            _react2.default.createElement(
+                                "a",
+                                { href: "{photo.permalink}" },
+                                "Permalink"
+                            )
+                        ),
                         prevImage != null ? _react2.default.createElement(
                             "a",
                             { className: "prev", href: "javascript:", onClick: this.viewImage.bind(this, prevImage) },
