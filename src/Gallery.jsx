@@ -74,11 +74,13 @@ export default class Gallery extends React.Component {
 
             return (
                 <div className="react-gallery-photo" style={style}>
+                    <a className="back" href="javascript:" onClick={this.closeImage.bind(this)}>&lt; Back to gallery</a>
                     <div className="react-gallery-photo-img responsive-photo">
-                        <img style={{width: "100%"}} src={photo.fullsize} />
+                        <a href="javascript:" onClick={this.viewImage.bind(this, nextImage)}>
+                            <img style={{width: "100%"}} src={photo.fullsize} />
+                        </a>
                     </div>
                     <div className="react-gallery-photo-description responsive-description">
-                        <a className="back" style={{float: "right"}} href="javascript:" onClick={this.closeImage.bind(this)}>Back to gallery</a>
                         <h3 className="title">{photo.name}</h3>
                         <p className="description">{photo.description}</p>
                         {prevImage != null ? <a className="prev" href="javascript:" onClick={this.viewImage.bind(this, prevImage)}>&lt; Prev</a> : <a className="prev" disabled>&lt; Prev</a>}
